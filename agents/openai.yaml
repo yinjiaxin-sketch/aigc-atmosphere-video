@@ -1,0 +1,6 @@
+interface:
+  display_name: "AIGC Atmosphere Video"
+  short_description: "Analyze and plan mood-first AIGC brand films."
+  default_prompt: "Use $aigc-atmosphere-video to analyze this AIGC video as an atmosphere-first brand film."
+policy:
+  allow_implicit_invocation: true
