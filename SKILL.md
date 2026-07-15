@@ -1,6 +1,6 @@
 ---
 name: aigc-atmosphere-video
-description: Analyze, critique, and plan atmosphere-first AIGC fashion, lifestyle, hiphop, and product videos where the goal is selling style, mood, brand world, pose language, reference-model presence, and visual consistency rather than obvious product closeups. Use when reviewing AI-generated video sequences, Douyin AIGC references, provided model photos, front/back outfit references, character motion, expressions, hiphop gestures, classic poses, architecture, scene logic, atmosphere unity, visual aesthetics, storyboards, shot plans, or prompts for mood-led brand films.
+description: Analyze, critique, and plan atmosphere-first AIGC fashion, lifestyle, hiphop, and product videos where the goal is selling style, mood, brand world, pose language, reference-model presence, and visual consistency rather than obvious product closeups. Use when reviewing AI-generated video sequences, Douyin AIGC references, provided model photos, front/back outfit references, character motion, expressions, hiphop gestures, classic poses, architecture, scene logic, atmosphere unity, visual aesthetics, storyboards, shot plans, production workflows, risk control, or prompts for mood-led brand films.
 ---
 
 # AIGC Atmosphere Video
@@ -58,6 +58,11 @@ The central question is:
    - Do not turn the film into a catalog, lookbook, or product close-up sequence unless requested.
    - Make clothing visible naturally through movement, group blocking, back-turn reveals, walking, leaning, and environmental framing rather than forced display.
 
+10. Production path:
+   - For final-quality work with multiple required reference models, prefer storyboard-first production.
+   - Do not rely on one whole-video generation from several reference images plus a long text prompt, except for rough mood exploration.
+   - Generate or define keyframes per shot, then create short video clips shot by shot. This reduces identity drift, missing models, clothing drift, gesture chaos, and inconsistent atmosphere.
+
 ## Review Workflow
 
 When analyzing a full video:
@@ -106,6 +111,11 @@ Before writing prompts or shot lists:
 8. Define ending memory:
    - End on the strongest brand-world image, not a blurry or generic scene.
 
+9. Define production workflow:
+   - Choose storyboard-first for final deliverables.
+   - Use direct reference-image plus text-to-video only for fast style tests, not final presentation.
+   - Build the final film from short controlled clips, then assemble rhythm, color, and sound.
+
 ## Repair Principles
 
 - If a shot is beautiful but does not strengthen the world, cut it.
@@ -115,6 +125,7 @@ Before writing prompts or shot lists:
 - If the product is subtle, make the style symbols stronger.
 - If the emotion is flat, reorder shots into a visible emotional arc.
 - If the hiphop mood feels static, add restrained gesture anchors instead of random dancing.
+- If direct whole-video generation creates unstable results, switch to storyboard-first and generate each shot separately.
 - If AI artifacts appear, simplify text, signage, hands, reflective surfaces, and complex fabric details.
 
 ## References
@@ -124,5 +135,7 @@ Read `references/creative-principles.md` when creating, rewriting, or repairing 
 Read `references/hiphop-gesture-system.md` when creating hiphop, rap, streetwear, underground street, or music-video style prompts.
 
 Read `references/reference-model-coverage.md` when the user provides model photos, front/back outfit images, or says specific people must appear in the main video.
+
+Read `references/production-workflow.md` when deciding whether to generate the whole video directly or build it from storyboards/keyframes and shot-level clips.
 
 Read `references/blogger-reference.md` when comparing against the reference creators Suwen, Yang Peilin yppl, Lishen, and related Douyin AIGC accounts.
