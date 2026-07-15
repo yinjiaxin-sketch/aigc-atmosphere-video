@@ -63,6 +63,12 @@ The central question is:
    - Do not rely on one whole-video generation from several reference images plus a long text prompt, except for rough mood exploration.
    - Generate or define keyframes per shot, then create short video clips shot by shot. This reduces identity drift, missing models, clothing drift, gesture chaos, and inconsistent atmosphere.
 
+11. Prompt precision:
+   - Avoid vague style-only prompts such as "cinematic", "film grain", "heavy shadows", or "smoke" without specifying the intended optical effect.
+   - When reference clothing is provided, lock the garment fit in words only where it prevents drift: short boxy heavyweight T-shirt, hem position, dropped shoulder, sleeve length, body width, fabric weight, and natural drape.
+   - Treat atmosphere as cinematography: define key light, negative fill, rim/back light, haze density, wet-ground reflectivity, wall texture, lens/filter feel, color palette, and shadow detail.
+   - Add detailed negative prompts for body anatomy, garment deformation, model merging, warped graphics, bad hands, distorted limbs, plastic skin, and cheap AI smoothness.
+
 ## Review Workflow
 
 When analyzing a full video:
@@ -137,5 +143,7 @@ Read `references/hiphop-gesture-system.md` when creating hiphop, rap, streetwear
 Read `references/reference-model-coverage.md` when the user provides model photos, front/back outfit images, or says specific people must appear in the main video.
 
 Read `references/production-workflow.md` when deciding whether to generate the whole video directly or build it from storyboards/keyframes and shot-level clips.
+
+Read `references/prompt-cinematography-control.md` when prompts need professional control over clothing fit, lighting, film texture, haze, wet reflections, color palette, and negative prompts.
 
 Read `references/blogger-reference.md` when comparing against the reference creators Suwen, Yang Peilin yppl, Lishen, and related Douyin AIGC accounts.
