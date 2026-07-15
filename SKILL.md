@@ -65,7 +65,7 @@ The central question is:
 
 11. Prompt precision:
    - Avoid vague style-only prompts such as "cinematic", "film grain", "heavy shadows", or "smoke" without specifying the intended optical effect.
-   - When reference clothing is provided, lock the garment fit in words only where it prevents drift: short boxy heavyweight T-shirt, hem position, dropped shoulder, sleeve length, body width, fabric weight, and natural drape.
+   - When reference clothing is provided, lock the garment fit per model according to the actual reference: hem position, body length, boxy or regular proportion, dropped shoulder, sleeve length, body width, fabric weight, and natural drape. Do not force every garment into the same short-boxy fit.
    - Treat atmosphere as cinematography: define key light, negative fill, rim/back light, haze density, wet-ground reflectivity, wall texture, lens/filter feel, color palette, and shadow detail.
    - Add detailed negative prompts for body anatomy, garment deformation, model merging, warped graphics, bad hands, distorted limbs, plastic skin, and cheap AI smoothness.
 
