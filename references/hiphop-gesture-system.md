@@ -63,4 +63,4 @@ Hiphop gestures should strengthen attitude and tribe identity. They are not rand
 
 ## Usage Rule
 
-For one 30-45 second atmosphere film, choose 3-5 gesture anchors and repeat them across models. The repetition makes the film feel like one tribe instead of unrelated AI clips.
+For one 15-30 second atmosphere film, choose 2-4 gesture anchors and repeat them across models. Place gestures inside walking, crossing, leaning, or crew movement rather than extending the film with isolated gesture shots. The repetition makes the film feel like one tribe instead of unrelated AI clips.

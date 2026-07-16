@@ -55,7 +55,7 @@ Write all visible movement on a timeline. For a 4-second clip, use this default 
 
 Do not describe an invisible past event in a still prompt, such as "after completing a nod." Describe only the visible end-state pose.
 
-When no final track is supplied, declare a working BPM and frame grid instead of using arbitrary decimal timing. A useful hiphop planning grid is `96 BPM at 24fps`: one beat is `0.625 seconds / 15 frames`; a six-beat shot is `3.75 seconds / 90 frames`; eight six-beat shots equal `30 seconds / 48 beats / 720 frames`. Put anticipation, initiation, travel, accent, landing, and cut on named beats. Remap the grid when the final track BPM changes.
+When no final track is supplied, declare a working BPM and frame grid instead of using arbitrary decimal timing. A useful hiphop planning grid is `96 BPM at 24fps`: one beat is `0.625 seconds / 15 frames`; a six-beat shot is `3.75 seconds / 90 frames`. Put anticipation, initiation, travel, accent, landing, and cut on named beats. Remap the grid when the final track BPM changes.
 
 For a six-beat, 90-frame clip, use this local grid as a starting point:
 
@@ -66,7 +66,15 @@ For a six-beat, 90-frame clip, use this local grid as a starting point:
 - beat 5, frames 60-74: one restrained performance accent; camera completes travel and decelerates
 - beat 6, frames 75-89: exact foot, hand, gaze, torso, subject scale, and cut-ready landing
 
-For a 30-second film on this working grid, use eight continuous global ranges: `0.000-3.750`, `3.750-7.500`, `7.500-11.250`, `11.250-15.000`, `15.000-18.750`, `18.750-22.500`, `22.500-26.250`, and `26.250-30.000`. Do not leave gaps or overlaps. For every range, record the shot's entry state, main action, camera function, exit state, and next-shot handoff. The local six-beat plan controls generation; the global 48-beat plan controls the edit.
+Keep the finished film between 15 and 30 seconds unless the brief requires another duration. On the 96 BPM working grid, choose a modular length instead of stretching actions:
+
+- 4 shots: `15.00 seconds / 24 beats / 360 frames`
+- 5 shots: `18.75 seconds / 30 beats / 450 frames`
+- 6 shots: `22.50 seconds / 36 beats / 540 frames`
+- 7 shots: `26.25 seconds / 42 beats / 630 frames`
+- 8 shots: `30.00 seconds / 48 beats / 720 frames`
+
+Choose the shortest module that can preserve required character coverage, front/back viewpoints, relationship shots, crew image, and ending. A four-model film often needs seven shots and `26.25 seconds`; forcing it into six shots may require a risky multi-character turn or an overloaded clip. Do not leave gaps or overlaps. For every range, record the shot's entry state, main action, camera function, exit state, and next-shot handoff. The local six-beat plan controls generation; the global beat plan controls the edit.
 
 ## Camera Direction Contract
 

@@ -86,6 +86,7 @@ The central question is:
    - Write an explicit timeline, camera path, start framing, end framing, entry state, and exit state. Camera movement must express reveal, pressure, connection, pursuit, or departure rather than decorate the shot.
 
 15. Master time grid and shot handoffs:
+   - Keep this user's atmosphere-led short films within 15-30 seconds unless the brief explicitly needs another length. Prefer the shortest duration that can preserve all required characters, viewpoints, relationships, and the ending image; do not stretch actions to fill 30 seconds.
    - For a full film, declare total duration, working BPM, frame rate, beat length, shot boundaries, and total frame count before writing individual prompts.
    - Give every short clip a beat-by-beat local timeline and a whole-film global time range. State the body action, camera travel, accent, deceleration, landing, and cut point on exact beats or frame ranges.
    - Track each shot's entry state, exit state, screen direction, subject scale, camera axis, and visual handoff to the next shot. A detailed clip that does not connect to the next clip still fails the whole-film edit.

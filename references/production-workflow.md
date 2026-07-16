@@ -66,13 +66,13 @@ Do not use it as the final method when specific models must appear.
 
 ## Recommended Four-Model Appearance Structure
 
-For a 30-45 second hiphop atmosphere film:
+For a 15-30 second hiphop atmosphere film, scale this structure to the shortest duration that preserves all required models and viewpoints:
 
 1. Opening: one back-view model, mysterious entry into the world.
 2. Solo appearances: each model gets one controlled main shot.
 3. Pair or trio transition: two or three models share a frame to build tribe connection.
 4. Full crew: all four appear together in a loose formation.
-5. Gesture passage: restrained hiphop gestures repeat across the models.
+5. Gesture accents: restrained hiphop gestures live inside the movement shots instead of requiring a separate passage.
 6. Ending: back-view or full-crew silhouette as the memory image.
 
 ## Shot Order Rule
