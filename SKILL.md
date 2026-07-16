@@ -1,6 +1,6 @@
 ---
 name: aigc-atmosphere-video
-description: Analyze, critique, and plan atmosphere-first AIGC fashion, lifestyle, hiphop, and product videos where the goal is selling style, mood, brand world, pose language, reference-model presence, and visual consistency rather than obvious product closeups. Use when reviewing AI-generated video sequences, Douyin AIGC references, provided model photos, front/back outfit references, character motion, expressions, hiphop gestures, classic poses, architecture, scene logic, atmosphere unity, visual aesthetics, storyboards, shot plans, production workflows, risk control, or prompts for mood-led brand films.
+description: Analyze, critique, and plan atmosphere-first AIGC fashion, lifestyle, hiphop, and product videos where the goal is selling style, mood, music-video energy, brand world, pose language, reference-model presence, and visual consistency rather than obvious product closeups. Use when reviewing AI-generated video sequences, Douyin AIGC references, provided model photos, front/back outfit references, character motion, expressions, hiphop gestures, classic poses, camera movement, motion continuity, architecture, scene logic, atmosphere unity, visual aesthetics, storyboards, shot plans, production workflows, risk control, or prompts for mood-led hiphop music-video films.
 ---
 
 # AIGC Atmosphere Video
@@ -68,6 +68,12 @@ The central question is:
    - When reference clothing is provided, lock the garment fit per model according to the actual reference: hem position, body length, boxy or regular proportion, dropped shoulder, sleeve length, body width, fabric weight, and natural drape. Do not force every garment into the same short-boxy fit.
    - Treat atmosphere as cinematography: define key light, negative fill, rim/back light, haze density, wet-ground reflectivity, wall texture, lens/filter feel, color palette, and shadow detail.
    - Add detailed negative prompts for body anatomy, garment deformation, model merging, warped graphics, bad hands, distorted limbs, plastic skin, and cheap AI smoothness.
+
+12. Hiphop MV priority:
+   - When the user asks for hiphop, prioritize music-video energy over brand campaign stillness.
+   - Build each shot around a beat-driven micro-action: walk-in, lean-in, head nod, shoulder bounce, chain touch, low squat, turn-back, step-through, crew reveal, or camera orbit.
+   - Define how every shot enters and exits so the edit flows. Avoid independent stand-still portraits that do not connect.
+   - Preserve the provided faces and hairstyles aggressively. If a face changes, the shot fails even if the atmosphere is strong.
 
 ## Review Workflow
 
@@ -145,5 +151,7 @@ Read `references/reference-model-coverage.md` when the user provides model photo
 Read `references/production-workflow.md` when deciding whether to generate the whole video directly or build it from storyboards/keyframes and shot-level clips.
 
 Read `references/prompt-cinematography-control.md` when prompts need professional control over clothing fit, lighting, film texture, haze, wet reflections, color palette, and negative prompts.
+
+Read `references/hiphop-mv-continuity.md` when creating hiphop music-video style shot plans, camera movement, performance actions, face-identity locks, and edit continuity.
 
 Read `references/blogger-reference.md` when comparing against the reference creators Suwen, Yang Peilin yppl, Lishen, and related Douyin AIGC accounts.

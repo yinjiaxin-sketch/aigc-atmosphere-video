@@ -31,12 +31,25 @@ Replace generic "heavy shadows" with:
 
 Use film texture as a controlled look, not random noise:
 
-- 35mm night color negative feeling, Kodak Vision3 500T / CineStill 800T inspired color response
+- ARRI ALEXA 35 / LogC4 inspired digital cinema base, graded toward 35mm night color negative feeling
+- Kodak Vision3 500T / CineStill 800T inspired tungsten-night color response, but do not overdo grain or halation
 - fine-to-medium organic grain, visible mostly in shadows and midtones
 - subtle halation/bloom only around practical lights and wet reflections
 - Black Pro-Mist 1/8 or 1/4 style diffusion: softened highlights, retained garment edge detail
+- 28mm to 40mm lens feeling for MV presence; use 50mm only for calmer close medium shots
+- subtle handheld or steadicam micro-movement; avoid locked fashion-campaign stillness unless the shot is a deliberate freeze
 - anamorphic-like vertical depth and slight falloff, but avoid fake streak flares unless needed
 - keep skin natural and textured; avoid plastic smoothing
+
+## Face Identity Lock
+
+When reference models are provided, treat face identity as a primary success condition:
+
+- preserve facial structure, ethnicity, skin tone, hairline, hair length/style, age, body proportion, and expression temperature
+- use "same person as reference, not a similar model" for front-view shots
+- avoid beautified replacement faces, generic fashion faces, face averaging, race drift, age drift, and hairstyle drift
+- keep front-facing shots medium or medium-wide if the tool struggles with exact likeness; do not force extreme close-ups
+- for back-view shots, preserve hairstyle from behind, neck/shoulder shape, stance, outfit proportion, and body silhouette
 
 ## Haze, Smoke, And Atmosphere
 
@@ -63,6 +76,8 @@ Use tactile, imperfect surfaces:
 
 - raw concrete with pores, chipped paint, water stains, scratches, old tape marks, scuffed metal shutter, oxidized steel railings
 - avoid clean 3D-rendered walls, smooth plastic concrete, generic futuristic corridor, or empty gray studio
+- make the space feel physically shootable: believable ceiling height, wall depth, door scale, railings attached to floor, practical lights mounted in real positions, puddles following floor cracks
+- avoid random damage everywhere. Choose 2-3 repeated environment anchors per scene so the location feels designed, not generated.
 
 ## Color Palette
 
