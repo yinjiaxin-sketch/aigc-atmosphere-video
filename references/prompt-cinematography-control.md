@@ -18,27 +18,25 @@ Avoid saying only "oversized T-shirt" because many models may make it too long, 
 
 ## Lighting Control
 
-Replace generic "heavy shadows" with:
+Replace generic "heavy shadows" with visible and physically motivated consequences. For realism-first industrial scenes, start with the fewest possible light sources:
 
-- low-key lighting with high contrast, around 8:1 key-to-fill feeling
-- hard side key from 45 degrees, slightly above head height
-- weak cool top light from industrial fluorescent tubes
-- narrow rim/back light to separate shoulders and hair from the dark background
-- strong negative fill on the shadow side, keeping one side of the face/body near black while retaining slight detail
+- one existing overhead fluorescent or one believable off-screen practical source
+- natural falloff, uneven illumination, and locally dark corners
+- shadow separation created by subject position, not a glowing rim outline
 - no flat beauty light, no glossy commercial studio fill
+- no decorative wall lamps or colored accent lights unless they are already part of the approved environment master
 
 ## Film And Lens Texture
 
-Use film texture as a controlled look, not random noise:
+Use film texture as a controlled consequence, not a stack of prestige camera terms:
 
-- ARRI ALEXA 35 / LogC4 inspired digital cinema base, graded toward 35mm night color negative feeling
-- Kodak Vision3 500T / CineStill 800T inspired tungsten-night color response, but do not overdo grain or halation
-- fine-to-medium organic grain, visible mostly in shadows and midtones
-- subtle halation/bloom only around practical lights and wet reflections
-- Black Pro-Mist 1/8 or 1/4 style diffusion: softened highlights, retained garment edge detail
+- prefer a plain real-location capture description before naming a camera, stock, filter, LUT, or emulsion
+- if a camera or stock is named, state only the visible consequence needed: highlight rolloff, shadow noise, motion blur, or color response
+- do not stack ARRI, Vision3, CineStill, Pro-Mist, halation, bloom, grain, wet reflections, and teal-orange color in one prompt; many models convert this stack into polished synthetic imagery
+- when output looks glossy, remove diffusion, halation, wet reflections, colored rim light, and decorative haze before adding more negative terms
+- use no diffusion filter by default for this user's rough underground MV direction
 - 28mm to 40mm lens feeling for MV presence; use 50mm only for calmer close medium shots
-- subtle handheld or steadicam micro-movement; avoid locked fashion-campaign stillness unless the shot is a deliberate freeze
-- anamorphic-like vertical depth and slight falloff, but avoid fake streak flares unless needed
+- describe the exact camera path and endpoint instead of writing only "subtle handheld"
 - keep skin natural and textured; avoid plastic smoothing
 
 ## Face Identity Lock
@@ -53,21 +51,21 @@ When reference models are provided, treat face identity as a primary success con
 
 ## Haze, Smoke, And Atmosphere
 
-Use haze more than thick smoke:
+Atmospheric haze is optional, not a default quality marker:
 
-- thin suspended haze to reveal light beams and give depth
+- begin with clean air or barely visible dust for realism-first tests
+- use thin suspended haze only when a visible practical light needs depth
 - low drifting smoke only near floor or background corners
 - no opaque smoke cloud covering clothes, hands, faces, or body edges
 - smoke should move slowly across the background, not erupt from the T-shirt
 
 ## Wet Ground And Reflections
 
-Make wet ground believable:
+Wet ground is optional and high-risk. Start dry when the model already produces glossy imagery:
 
-- uneven wet asphalt or sealed concrete, not mirror glass
-- shallow puddles in cracks and surface low points
-- broken blue-orange reflections from off-screen practical lights
-- reflections should be dim and fragmented, not neon cyberpunk
+- mostly dry dusty concrete with small darker damp patches
+- if water is needed, confine it to one or two shallow depressions visible in both first and end frames
+- do not use blue-orange floor reflections as a default atmosphere device
 - keep shoe contact with ground clear
 
 ## Wall And Location Texture
@@ -109,3 +107,5 @@ For final prompts, write in layers:
 6. film/lens texture
 7. movement
 8. negative prompt
+
+When realism fails, simplify the positive prompt first. Repeating technical film terms and long anti-gloss negatives cannot override a glossy first frame.

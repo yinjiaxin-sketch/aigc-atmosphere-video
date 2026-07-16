@@ -18,7 +18,7 @@ For supplied model references:
 
 ## MV Motion Beats
 
-Each shot needs a simple action with a clear start and finish:
+Each shot needs one primary action that visibly changes body position or posture, plus one restrained beat accent and one landing pose:
 
 - walk-in: character enters frame or takes two slow steps toward camera
 - lean-in: character pushes off a wall and settles into rhythm
@@ -31,6 +31,20 @@ Each shot needs a simple action with a clear start and finish:
 - orbit: camera arcs around one or two models while they hold rhythm
 
 Avoid static "standing portrait" shots unless they are used as a deliberate final freeze.
+
+Do not count breathing, a small head nod, a shoulder drop, or a 20-30 cm camera push as a complete normal shot. Those are secondary accents. Build the shot around a larger readable event such as two steps across frame, pushing off a wall, passing a pillar, turning through 60-90 degrees, dropping into or rising from a low pose, crossing another character, or revealing a crew.
+
+## Timed Performance Direction
+
+For every 3-5 second clip, write the timeline in visible action phases:
+
+1. Anticipation: action-ready weight, foot position, gaze, and hand position.
+2. Initiation: the first foot, shoulder, hip, or hand starts the action.
+3. Main action: the body travels or changes posture; the camera responds.
+4. Accent: one head, shoulder, chain, palm, or glance beat.
+5. Landing: feet, hands, gaze, and torso settle into the exact end frame.
+
+For a 4-second shot, a useful default is `0.0-0.4 anticipation`, `0.4-1.5 initiation`, `1.5-2.8 main action`, `2.8-3.5 accent and deceleration`, `3.5-4.0 landing hold`. Adjust this to the action, but never leave the model to invent when movements happen.
 
 ## Shot-To-Shot Flow
 
@@ -65,6 +79,10 @@ Avoid:
 - fast random camera shake
 - excessive fashion-commercial slow motion
 - movement that does not match body rhythm
+- a weak axial push toward a person who otherwise stands still
+- combining push, orbit, zoom, tilt, and shake in one short clip
+
+For each shot, specify lens family, starting camera height, starting side of the subject, exact path, approximate travel distance or arc, speed curve, subject-camera relationship, and final composition. Use one dominant camera move per short clip.
 
 ## Environment Realism
 
@@ -75,6 +93,9 @@ The location should feel like a real shootable underground/industrial site, not 
 - haze should reveal light cones, not cover the subject
 - wall damage should follow believable surfaces: water streaks under pipes, chipped paint around edges, worn railings where hands touch
 - repeat environment anchors across shots: same shutter type, same rail color, same cold tube light, same blue-orange practical spill
+- keep a fixed environment master: the same shutter bays, column spacing, ceiling height, lamp positions, floor cracks, railing geometry, and light direction must recur across connected clips
+
+Do not independently redesign the location for every keyframe. Build and approve a master scene plate or an environment reference set, then derive shot keyframes from it.
 
 ## Recommended Sequence Logic
 

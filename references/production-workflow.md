@@ -33,16 +33,23 @@ Do not generate the whole film from several reference images plus one long text 
 3. Create storyboard/keyframes:
    - Generate or design a still frame for each shot first.
    - Lock atmosphere, location, pose, and model coverage before video generation.
+   - Approve one environment master plate or a tightly matched environment reference set before generating character keyframes.
+   - Derive the end frame from the approved first frame. Do not independently text-generate both ends of one shot.
 
-4. Generate shot-level clips:
+4. Validate the frame pair:
+   - Check the same architecture, column and shutter layout, light count and positions, floor cracks, camera axis, lens perspective, exposure, and color temperature.
+   - Reject the pair if any difference cannot be explained by the planned subject or camera movement.
+
+5. Generate shot-level clips:
    - Create 3-5 second clips per shot.
-   - Keep each prompt focused on one action, one camera movement, and one emotional purpose.
+   - Keep each prompt focused on one primary action, one beat accent, one landing pose, one dominant camera movement, and one emotional purpose.
+   - Write a timed action and camera path instead of letting the model invent pacing.
 
-5. Select and assemble:
+6. Select and assemble:
    - Choose the most stable clip for each shot.
    - Assemble in edit with consistent color, grain, sound, and rhythm.
 
-6. Repair only weak shots:
+7. Repair only weak shots:
    - Regenerate the unstable shot, not the whole video.
 
 ## When Direct Generation Is Acceptable
@@ -79,3 +86,17 @@ Do not show all four models together too early unless the hook requires immediat
 - ending: return to the strongest back-view or group image
 
 This makes the film feel designed, not like a random model collage.
+
+## Whole-Film Continuity Ledger
+
+Before generation, record for every shot:
+
+- set ID and approved environment plate
+- character IDs and reference viewpoints
+- entry body state and exit body state
+- primary action and beat accent
+- lens, camera height, camera side, path, distance, and end framing
+- light sources and their fixed screen positions
+- the previous shot's exit direction and the next shot's entry direction
+
+Do not approve a clip because it is attractive in isolation. Approve it only when it fits this ledger.

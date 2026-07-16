@@ -75,6 +75,21 @@ The central question is:
    - Define how every shot enters and exits so the edit flows. Avoid independent stand-still portraits that do not connect.
    - Preserve the provided faces and hairstyles aggressively. If a face changes, the shot fails even if the atmosphere is strong.
 
+13. First/end-frame continuity:
+   - Reject a first/end-frame pair before video generation when the architecture, camera axis, lens perspective, light positions, exposure, color temperature, or surface layout changes beyond the planned camera move.
+   - The end frame must be an edit or controlled continuation of the approved first frame, not a second independent scene generation.
+   - A location change disguised as a camera move is a failed frame pair. Do not try to repair it in the video prompt.
+
+14. Action and camera direction:
+   - Do not use breathing, a small head nod, a shoulder drop, or a short push-in as the only event of a normal MV shot. That produces a standing portrait.
+   - Give each shot one visible primary action with spatial or posture change, one restrained beat accent, and one readable landing pose.
+   - Write an explicit timeline, camera path, start framing, end framing, entry state, and exit state. Camera movement must express reveal, pressure, connection, pursuit, or departure rather than decorate the shot.
+
+15. Master time grid and shot handoffs:
+   - For a full film, declare total duration, working BPM, frame rate, beat length, shot boundaries, and total frame count before writing individual prompts.
+   - Give every short clip a beat-by-beat local timeline and a whole-film global time range. State the body action, camera travel, accent, deceleration, landing, and cut point on exact beats or frame ranges.
+   - Track each shot's entry state, exit state, screen direction, subject scale, camera axis, and visual handoff to the next shot. A detailed clip that does not connect to the next clip still fails the whole-film edit.
+
 ## Review Workflow
 
 When analyzing a full video:
@@ -153,5 +168,7 @@ Read `references/production-workflow.md` when deciding whether to generate the w
 Read `references/prompt-cinematography-control.md` when prompts need professional control over clothing fit, lighting, film texture, haze, wet reflections, color palette, and negative prompts.
 
 Read `references/hiphop-mv-continuity.md` when creating hiphop music-video style shot plans, camera movement, performance actions, face-identity locks, and edit continuity.
+
+Read `references/kling-first-last-frame-direction.md` when using Kling first/end-frame generation, designing timed movement, checking frame-pair continuity, preventing standing-portrait motion, or locking one environment across several clips.
 
 Read `references/blogger-reference.md` when comparing against the reference creators Suwen, Yang Peilin yppl, Lishen, and related Douyin AIGC accounts.
