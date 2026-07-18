@@ -70,12 +70,14 @@ Wet ground is optional and high-risk. Start dry when the model already produces 
 
 ## Wall And Location Texture
 
-Use tactile, imperfect surfaces:
+Texture must follow construction and use history rather than decorate the frame:
 
-- raw concrete with pores, chipped paint, water stains, scratches, old tape marks, scuffed metal shutter, oxidized steel railings
-- avoid clean 3D-rendered walls, smooth plastic concrete, generic futuristic corridor, or empty gray studio
-- make the space feel physically shootable: believable ceiling height, wall depth, door scale, railings attached to floor, practical lights mounted in real positions, puddles following floor cracks
-- avoid random damage everywhere. Choose 2-3 repeated environment anchors per scene so the location feels designed, not generated.
+- establish buildable geometry, attachment points, scale, drainage, traffic routes, and light sources before describing surface wear
+- place water streaks below joints or penetrations, impact marks at contact height, dust at edges, rust near exposed steel or fasteners, and wear along real foot or trolley paths
+- give concrete, galvanized steel, painted metal, floor, cloth, and skin different reflectance; do not apply one global roughness or noise texture
+- preserve small ordinary functional evidence such as conduit, a junction box, shutter guide, drain, fastener, or patched fixing point when it has a structural reason
+- avoid random pores, cracks, tape, stains, and peeling paint across every surface; decorative grunge is an AI-set signal
+- approve an empty location plate before adding the model; character prompts must not redesign the background
 
 ## Color Palette
 

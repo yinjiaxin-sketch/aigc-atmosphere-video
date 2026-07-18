@@ -91,6 +91,13 @@ The central question is:
    - Give every short clip a beat-by-beat local timeline and a whole-film global time range. State the body action, camera travel, accent, deceleration, landing, and cut point on exact beats or frame ranges.
    - Track each shot's entry state, exit state, screen direction, subject scale, camera axis, and visual handoff to the next shot. A detailed clip that does not connect to the next clip still fails the whole-film edit.
 
+16. Background realism engineering:
+   - Judge background realism by physical causality: buildable geometry, plausible scale, material-specific reflectance, source-consistent light, causal wear, coherent optics, and temporal stability. More cracks and texture do not create realism.
+   - Approve an empty environment plate before adding models. Prefer a real location photo or video frame; pure text-to-image backgrounds are exploratory unless they pass a strict environment gate.
+   - Separate background, character composite, end-frame derivation, motion generation, and post camera movement. Do not ask one generation to invent all of them.
+   - Treat generative camera movement as an unseen-pixel risk. Prefer locked or nearly locked shots when character identity, clothing, architecture, and multi-person consistency are all critical; add small camera energy in post.
+   - Adversarially inspect the background without people, at 200% crop, in grayscale, across first/middle/end frames, and in reverse playback. Reject attractive images with impossible construction or breathing geometry.
+
 ## Review Workflow
 
 When analyzing a full video:
@@ -171,5 +178,7 @@ Read `references/prompt-cinematography-control.md` when prompts need professiona
 Read `references/hiphop-mv-continuity.md` when creating hiphop music-video style shot plans, camera movement, performance actions, face-identity locks, and edit continuity.
 
 Read `references/kling-first-last-frame-direction.md` when using Kling first/end-frame generation, designing timed movement, checking frame-pair continuity, preventing standing-portrait motion, or locking one environment across several clips.
+
+Read `references/background-realism-engineering.md` when a background looks synthetic, over-designed, glossy, game-like, structurally inconsistent, or unstable during camera motion.
 
 Read `references/blogger-reference.md` when comparing against the reference creators Suwen, Yang Peilin yppl, Lishen, and related Douyin AIGC accounts.
