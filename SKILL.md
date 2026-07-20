@@ -101,6 +101,18 @@ The central question is:
    - Treat generative camera movement as an unseen-pixel risk. Prefer locked or nearly locked shots when character identity, clothing, architecture, and multi-person consistency are all critical; add small camera energy in post.
    - Adversarially inspect the background without people, at 200% crop, in grayscale, across first/middle/end frames, and in reverse playback. Reject attractive images with impossible construction or breathing geometry.
 
+17. Visual authorship beyond realism:
+   - Treat realism as a pass/fail gate, not as the creative concept. A believable but generic loading bay still fails when its silhouette, architecture, blocking, and camera attitude are forgettable.
+   - Build atmosphere in this order: dominant silhouette, spatial motif, character hierarchy, light logic, color hierarchy, then surface detail.
+   - Reject the generic AI-industrial package of roll-up shutters, random cracks, mirror-wet floors, blue-orange light, thick smoke, glossy skin, and centered fashion-campaign posing.
+   - For hiphop, prioritize low camera height, foreground occlusion, asymmetrical negative space, depth-plane crossings, body-led cuts, and crew relationships.
+
+18. Kling 3.0 Omni mode:
+   - When the user selects Kling 3.0 Omni without first/end frames, do not apply first/end-frame interpolation rules to the generation plan.
+   - Build one Element per real character using that character's matched front/back references, plus one approved environment-world Element from 2-4 continuous location views.
+   - Prefer two 10-12 second custom multi-shot sequences for a 20-25 second film. Use 3-4 storyboard shots per sequence and replace only failed shots with separate single-shot Omni generations.
+   - Specify duration, visible Elements, environment zone, body route, beat accent, landing, shot size, camera path, light continuity, handoff, and negatives for every custom shot.
+
 ## Review Workflow
 
 When analyzing a full video:
@@ -183,5 +195,9 @@ Read `references/hiphop-mv-continuity.md` when creating hiphop music-video style
 Read `references/kling-first-last-frame-direction.md` when using Kling first/end-frame generation, designing timed movement, checking frame-pair continuity, preventing standing-portrait motion, or locking one environment across several clips.
 
 Read `references/background-realism-engineering.md` when a background looks synthetic, over-designed, glossy, game-like, structurally inconsistent, or unstable during camera motion.
+
+Read `references/hiphop-visual-authorship.md` when a scene is technically realistic but still has no feeling, visual authorship, spatial tension, or memorable hiphop image grammar.
+
+Read `references/kling-3-omni-workflow.md` when the user is working with Kling 3.0 Omni, Element references, custom multi-shot generation, or a no-first/end-frame workflow.
 
 Read `references/blogger-reference.md` when comparing against the reference creators Suwen, Yang Peilin yppl, Lishen, and related Douyin AIGC accounts.
