@@ -113,6 +113,14 @@ The central question is:
    - Prefer two 10-12 second custom multi-shot sequences for a 20-25 second film. Use 3-4 storyboard shots per sequence and replace only failed shots with separate single-shot Omni generations.
    - Specify duration, visible Elements, environment zone, body route, beat accent, landing, shot size, camera path, light continuity, handoff, and negatives for every custom shot.
 
+19. Production control and measurable acceptance:
+   - Treat reference files, Element definitions, environment plates, prompts, generations, and accepted clips as versioned production assets rather than loose files.
+   - Fingerprint every front/back reference pair and refresh the Element version whenever either source changes.
+   - Do not claim centimeter-level garment tolerances from uncalibrated reference images. Without physical measurements, lock hem, shoulder, sleeve, width, and drape using body landmarks and normalized visual proportions.
+   - Gate production in order: references, empty environment, prompts, solo shots, multi-character shots, shot QC, then final edit.
+   - Log every generation attempt with stable failure codes and a repair decision. Notes such as "bad" or "no feeling" are not sufficient failure records.
+   - Never invent an API endpoint. Export generation queues without sending until official API documentation and credentials are available.
+
 ## Review Workflow
 
 When analyzing a full video:
@@ -199,5 +207,7 @@ Read `references/background-realism-engineering.md` when a background looks synt
 Read `references/hiphop-visual-authorship.md` when a scene is technically realistic but still has no feeling, visual authorship, spatial tension, or memorable hiphop image grammar.
 
 Read `references/kling-3-omni-workflow.md` when the user is working with Kling 3.0 Omni, Element references, custom multi-shot generation, or a no-first/end-frame workflow.
+
+Read `references/production-control-system.md` when the user needs Element versioning, preflight gates, parameter tables, generation queues, failure tracking, automatic shot checklists, or repeatable production records. Use `scripts/omni_production.py` for deterministic refresh, queue export, checklist generation, and failure logging.
 
 Read `references/blogger-reference.md` when comparing against the reference creators Suwen, Yang Peilin yppl, Lishen, and related Douyin AIGC accounts.
