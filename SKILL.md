@@ -53,8 +53,11 @@ The central question is:
    - Do not force logo shots unless the brief requires commercial clarity.
 
 9. Provided model coverage:
-   - If the user provides front and back photos for multiple models, preserve each model as a distinct character type and make all provided models appear in the main shots.
+   - If the user provides front and back photos for multiple models, count the files and register them as identity pairs. Four models with front and back references means eight source images but four characters, not eight characters.
+   - Preserve each model as a distinct character type and make all provided models appear in the main shots.
    - Front and back references are used to preserve identity, hair, body shape, outfit silhouette, garment fit, and overall styling.
+   - Use viewpoint-matched sources: front source for front shots, back source for back shots. For a three-quarter view, assign the front image to face/front identity and the back image to rear hair/shoulder/graphic structure; never average all references together.
+   - In four-person shots, map one source to one fixed character slot and preferably composite characters sequentially. Do not feed all eight images as equal references in one uncontrolled generation.
    - Do not turn the film into a catalog, lookbook, or product close-up sequence unless requested.
    - Make clothing visible naturally through movement, group blocking, back-turn reveals, walking, leaning, and environmental framing rather than forced display.
 

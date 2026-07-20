@@ -10,9 +10,14 @@ Do not make the film a product catalog unless requested. The clothing can be vis
 
 ## How To Use Front And Back References
 
+- Four models with one front and one back image each means eight source images organized as four identity pairs.
 - Use front photos to preserve face, hair, posture, body shape, outfit silhouette, jewelry, pants, shoes, and emotional temperature.
 - Use back photos to preserve hairstyle from behind, T-shirt back graphic position, shoulder shape, garment length, pants silhouette, stance, and back-turn identity.
 - Use both angles as natural moments inside the atmosphere: standing, walking away, turning, leaning, group blocking, or final silhouette.
+- Label the references before prompting, for example `A-front/A-back`, `B-front/B-back`, `C-front/C-back`, and `D-front/D-back`.
+- Use only the matching viewpoint in a clear front or back shot. For a three-quarter view, assign explicit roles to the same character's pair instead of blending them equally.
+- Never treat all eight files as equal visual references in one generation. That encourages identity averaging, face swaps, garment exchange, and missing characters.
+- For four-person group frames, create fixed character slots and preferably composite one character at a time while freezing the approved environment and previously placed characters.
 
 ## Required Shot Coverage
 
