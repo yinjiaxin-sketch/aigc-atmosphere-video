@@ -215,6 +215,8 @@ Read `references/background-realism-engineering.md` when a background looks synt
 
 Read `references/hiphop-visual-authorship.md` when a scene is technically realistic but still has no feeling, visual authorship, spatial tension, or memorable hiphop image grammar.
 
+Read `references/hiphop-nightclub-world.md` when the chosen setting is a bar, nightclub, basement venue, DJ room, dance floor, backstage corridor, or after-hours club and the result must feel hiphop without generic neon-club AI imagery.
+
 Read `references/kling-3-omni-workflow.md` when the user is working with Kling 3.0 Omni, Element references, custom multi-shot generation, or a no-first/end-frame workflow.
 
 Read `references/production-control-system.md` when the user needs Element versioning, preflight gates, parameter tables, generation queues, failure tracking, automatic shot checklists, or repeatable production records. Use `scripts/omni_production.py` for deterministic refresh, queue export, checklist generation, and failure logging.
