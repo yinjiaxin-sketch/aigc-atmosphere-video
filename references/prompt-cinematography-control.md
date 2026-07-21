@@ -38,6 +38,8 @@ Use film texture as a controlled consequence, not a stack of prestige camera ter
 - 28mm to 40mm lens feeling for MV presence; use 50mm only for calmer close medium shots
 - describe the exact camera path and endpoint instead of writing only "subtle handheld"
 - keep skin natural and textured; avoid plastic smoothing
+- lock facial texture and volume explicitly: `Skin texture is visible but natural, showing slight pores and subtle surface variation, NOT smoothed or airbrushed, NOT plastic or wax-like, NOT overly sharp or grain-heavy. Face maintains volume in shadow, eye socket and jawline never collapse or flatten. High-key areas transition smoothly without harsh highlight blooming or HDR appearance.`
+- treat visible pores as low-amplitude surface variation, not a sharpening effect or grain overlay; preserve cheek, eye-socket, nose, lip, and jaw volume in shadow
 
 ## Face Identity Lock
 
@@ -89,13 +91,14 @@ For the user's hiphop atmosphere films:
 
 ## Negative Prompt Areas
 
-Include negatives for:
+Write negatives as a stable system and repeat the relevant full categories in the master prompt and every shot prompt. Do not scatter a few negatives at random. Use this order:
 
-- anatomy: extra fingers, missing fingers, fused fingers, broken wrists, twisted elbows, impossible knees, bent ankles, floating feet, wrong shoulder width, stretched neck, warped spine, duplicated limbs
-- face/identity: face swap, changed ethnicity, changed age, changed hairstyle, merged models, generic AI people, missing required model
-- garment: wrong garment length, wrong hem position, cropped when the reference is longer, longline when the reference is shorter, dress-like T-shirt, tucked-in shirt, tight fitted shirt, stretched print, melted print, warped text, changing pants, changing shoes, changing jewelry, plastic fabric
-- scene: glossy 3D render, smooth AI wall, cheap neon, fake cyberpunk, dense smoke covering subject, mirror-like wet floor, flat studio light
-- motion: exaggerated dance, chaotic hand signs, gang signs, weapon gesture, fast hand motion, jitter, flicker, morphing body, teleporting limbs
+1. Character identity and face: face replacement, averaged face, identity merge, copied person, age/ethnicity/skin-tone change, hair swap, beauty repaint, airbrushed skin, plastic or wax skin, collapsed eye sockets, flattened jawline, harsh HDR highlight bloom.
+2. Anatomy: extra/missing/fused fingers, hand penetration, reversed joints, fused legs, sliding feet, floating soles, stretched body proportions.
+3. Garment and styling: hem drift, wrong garment length, tucked shirt, dress-like T-shirt, tightened fit, thinner fabric, changed neckline/sleeve, graphic/text drift, front/back graphic swap, swapped pants/shoes/accessories.
+4. Action and choreography: repeated dance loop, synchronized group choreography, complex finger signs, fast floorwork, impossible weight transfer, reversed motion, slow motion, speed ramp.
+5. Scene and material: new people/vehicles/props/text, glossy concrete, mirror-wet floor, neon color wash, thick smoke, volumetric beams, HDR, CGI surfaces, breathing architecture, changing openings or fixtures.
+6. Camera and edit: floating gimbal, drone motion, random shake, uncontrolled orbit, fast zoom, focus breathing, impossible parallax, invented transition, morph, dissolve, flash wipe, or any extra shot not specified by the timecode.
 
 ## Prompt Rule
 

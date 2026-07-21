@@ -64,3 +64,42 @@ Hiphop gestures should strengthen attitude and tribe identity. They are not rand
 ## Usage Rule
 
 For one 15-30 second atmosphere film, choose 2-4 gesture anchors and repeat them across models. Place gestures inside walking, crossing, leaning, or crew movement rather than extending the film with isolated gesture shots. The repetition makes the film feel like one tribe instead of unrelated AI clips.
+
+## Dance-As-Accent Rule
+
+For this user's atmosphere-led hiphop films, dance is normally a secondary accent, not the main subject. Start from this default balance unless the brief explicitly asks for a dance film:
+
+- 70% spatial action and attitude: entering, crossing, circling a pillar, leaning, rising, changing depth plane, gathering, or leaving.
+- 20% restrained groove: knee pulse, weight transfer, shoulder lag, head nod, or body rock integrated into the spatial action.
+- 10% recognizable classic hiphop accent: one clearly readable move used as a beat punctuation.
+
+Do not assign a dance move to every shot. In a 20-25 second film, two or three explicit dance accents are enough. A three-second shot should contain no more than one primary route, one groove, and one accent.
+
+## AI-Safe Classic Accents
+
+Use small-amplitude, upright moves that preserve the face, outfit silhouette, garment hem, hands, and body anatomy:
+
+1. Two-step accent:
+   - one side step, trailing foot closes halfway, knees stay soft, shoulders counter-swing naturally
+   - complete one cycle only, then return to walking or a landing pose
+
+2. Top-rock cross-step accent:
+   - one foot crosses diagonally in front, torso counter-rotates slightly, then the foot returns
+   - keep the crossing shallow and the hands below chest height
+
+3. Heel-toe pivot accent:
+   - one heel and the opposite toe rotate outward a small amount, then settle
+   - use as a half-second punctuation, not a repeated footwork sequence
+
+4. Chest-hit accent:
+   - sternum advances slightly on one beat and releases immediately
+   - shoulders and head follow with a small natural delay; no whole-body spasm
+
+5. Cypher support groove:
+   - the center character may perform one two-step or heel-toe accent
+   - surrounding characters keep different restrained bounces, head nods, or weight shifts
+   - never make all characters perform synchronized choreography
+
+## High-Risk Dance Actions
+
+Avoid windmills, headspins, handstands, freezes, floorwork, knee drops, fast running-man sequences, complex foot shuffles, repeated arm waves, fast full-body choreography, and hands close to the lens. They sharply increase identity drift, limb deformation, garment-length changes, graphic warping, and unstable backgrounds. Avoid gang-associated signs or coded hand patterns entirely.

@@ -43,6 +43,8 @@ The central question is:
    - For hiphop-led films, use classic gestures and body attitudes as style anchors: head nods, shoulder bounce, hand-to-chest emphasis, open-palm rap gestures, two-finger point, arms crossed, hands in pockets, chain touch, hood/cap adjustment, wall lean, low squat, sneaker tap, back-turn reveal, and crew formation.
    - Keep gestures controlled and intentional. Use 1-2 clear gestures per shot rather than constant hand motion.
    - Avoid accidental gang signs, weapon gestures, offensive gestures, fake bravado, or exaggerated dancing unless the brief explicitly calls for them.
+   - Unless the user explicitly requests a dance film, treat classic dance vocabulary as beat punctuation rather than the main action. Default to roughly 70% spatial action and attitude, 20% restrained groove, and 10% recognizable dance accent.
+   - In a 20-25 second film, use only 2-3 explicit upright accents such as one two-step, one shallow top-rock cross-step, or one heel-toe/chest-hit punctuation. Keep floorwork and fast choreography out of identity-critical generations.
 
 7. AI realism:
    - Check hands, faces, eyes, clothing text, signage, logos, reflections, fabric movement, product geometry, scale, and architecture consistency.
@@ -71,6 +73,8 @@ The central question is:
    - When reference clothing is provided, lock the garment fit per model according to the actual reference: hem position, body length, boxy or regular proportion, dropped shoulder, sleeve length, body width, fabric weight, and natural drape. Do not force every garment into the same short-boxy fit.
    - Treat atmosphere as cinematography: define key light, negative fill, rim/back light, haze density, wet-ground reflectivity, wall texture, lens/filter feel, color palette, and shadow detail.
    - Add detailed negative prompts for body anatomy, garment deformation, model merging, warped graphics, bad hands, distorted limbs, plastic skin, and cheap AI smoothness.
+   - Preserve natural skin as slight pores and low-amplitude surface variation, never as sharpening or heavy grain. Face volume must survive in shadow: eye sockets and jawline cannot collapse or flatten, and bright skin must roll smoothly without highlight bloom or HDR appearance.
+   - Organize negatives in a fixed order: character/face, anatomy, garment, action, scene/material, then camera/edit. Repeat the relevant complete categories in the master prompt and each shot prompt.
 
 12. Hiphop MV priority:
    - When the user asks for hiphop, prioritize music-video energy over brand campaign stillness.
@@ -112,6 +116,8 @@ The central question is:
    - Build one Element per real character using that character's matched front/back references, plus one approved environment-world Element from 2-4 continuous location views.
    - Prefer two 10-12 second custom multi-shot sequences for a 20-25 second film. Use 3-4 storyboard shots per sequence and replace only failed shots with separate single-shot Omni generations.
    - Specify duration, visible Elements, environment zone, body route, beat accent, landing, shot size, camera path, light continuity, handoff, and negatives for every custom shot.
+   - When several approved plates represent one location, state in the master prompt and every shot that they are continuous zones of the same site, time, weather, light direction, practical-light color, construction system, and material response.
+   - Give every shot a hard start and hard end time. Explicitly prohibit Omni from adding transitions, establishing inserts, reaction shots, or any unrequested intermediate shot.
 
 19. Production control and measurable acceptance:
    - Treat reference files, Element definitions, environment plates, prompts, generations, and accepted clips as versioned production assets rather than loose files.
@@ -165,6 +171,7 @@ Before writing prompts or shot lists:
 7. Define gesture logic:
    - Choose 3-5 repeated hiphop pose/gesture anchors when the style calls for them.
    - Make gestures support the world: confidence, pressure, coldness, defiance, ritual, or crew identity.
+   - Decide whether dance is primary or auxiliary. When auxiliary, embed a maximum of one classic dance accent inside an existing walk, crossing, rise, or cypher shot; do not create isolated dance-demonstration shots.
 
 8. Define ending memory:
    - End on the strongest brand-world image, not a blurry or generic scene.
