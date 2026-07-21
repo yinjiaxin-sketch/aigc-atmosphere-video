@@ -25,7 +25,9 @@ Each sequence should contain 3-4 custom shots. This gives the model enough conte
 
 If one shot fails, regenerate that shot as a separate single-shot Omni clip using the same Elements, action, camera path, environment zone, entry pose, and exit pose. Replace only that section in the edit.
 
-For manual production, identity-critical multi-character work, or a temporarily unavailable external image API, prefer three or four independent 4-6 second single-take clips. For four required characters with front/back coverage, default to four clips of five seconds for a 20-second film. Give every clip one physical camera take, one main spatial action, at most one explicit dance accent, and no internal edit. Join the approved clips with hard cuts in post. This costs more separate submissions but sharply limits identity drift, environment redesign, and automatic transitions.
+For manual production, identity-critical multi-character work, or a temporarily unavailable external image API, prefer independent 4-6 second single-take clips. Use 3-6 clips according to the number of required characters, viewpoints, and group states; do not force four clips when four solo identity checks plus front/back group coverage require six. Give every clip one physical camera take, one main spatial action, at most one explicit dance accent, and no internal edit. Join the approved clips with hard cuts in post. This costs more separate submissions but sharply limits identity drift, environment redesign, and automatic transitions.
+
+For a solo-first workflow, understand the actual limitation: accepting a solo clip does not train or update its Character Element. Extract one clean approved frame from each solo clip and use it as a secondary lighting and continuity reference during sequential group-anchor compositing. The original front/back source images remain authoritative for identity, anatomy, garment fit, hem, graphics, trousers, shoes, and accessories.
 
 ## Custom Multi-Shot Prompt Contract
 
@@ -43,6 +45,20 @@ For every shot specify:
 10. Shot-specific negatives.
 
 Do not write a long paragraph that mixes all shots. Use separate storyboard blocks.
+
+## Camera Diagram Reconciliation
+
+When camera diagrams, storyboard HTML, and written camera instructions are supplied together, reconcile them before writing generation prompts. Create one source of truth per shot with:
+
+1. environment anchors and navigable route;
+2. subject start point, end point, facing, screen direction, and displacement;
+3. camera start point, viewing direction, lens, height, path, travel distance, acceleration, deceleration, and stop point;
+4. the shot's entry state, action completion, landing window, and hard-cut state;
+5. the spatial and motion handoff into the next shot.
+
+Do not preserve contradictions. If prose describes a full walking step while a diagram labels only 3-4 cm of movement, select the physically meaningful displacement and update both artifacts. If a shot is declared solo, remove any instruction that requires another named character to cross, brush past, or remain visible.
+
+Floor plans must include real anchors, not only zone labels. For a nightclub world, draw the entrance door, bar, curtain opening, main floor, DJ booth, PA speakers, and exit. A camera icon placed in a different zone from the written camera position is a hard failure.
 
 ## Movement Freedom
 

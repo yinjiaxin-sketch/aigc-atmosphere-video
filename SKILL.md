@@ -129,6 +129,15 @@ The central question is:
    - Log every generation attempt with stable failure codes and a repair decision. Notes such as "bad" or "no feeling" are not sufficient failure records.
    - Never invent an API endpoint. Export generation queues without sending until official API documentation and credentials are available.
 
+20. Camera-plan and storyboard authority:
+   - When the user provides camera-position images, floor plans, storyboard HTML, or written camera notes, treat all of them as production inputs. Do not silently replace the supplied camera concept with a new one.
+   - Before rewriting prompts, build a per-shot contract that reconciles subject start/end position, body facing, screen direction, camera position, viewing direction, lens, height, travel distance, speed curve, stop point, and the handoff to the next shot.
+   - Flag and resolve contradictions between the diagram and prose. A diagram that says a subject moves 3-4 cm cannot coexist with prose that describes walking through a corridor; a solo shot cannot also require an absent character to brush past.
+   - A useful floor plan must show actual environmental anchors such as entrance door, bar, curtain opening, DJ booth, PA speakers, and exit. Abstract zone boxes alone are insufficient when they allow impossible camera placement or spatial handoffs.
+   - Accepted solo generations do not train or update a Kling Character Element. To make solo-first rollback technically useful, extract an approved clear frame and reuse it as a secondary lighting and continuity reference when building the group anchor; keep the original front/back references as identity, body, garment, and fit authority.
+   - In identity-critical work, omit generated NPCs until all required characters and group shots have passed. If background population is still needed, add locked defocused silhouettes in post rather than spending generation capacity on extra identities.
+   - Reject solo shots whose only event is breathing, looking down, or preparing to move. Require a visible route with a start, weight transfer, spatial displacement, landing, and cut-ready exit state.
+
 ## Review Workflow
 
 When analyzing a full video:
