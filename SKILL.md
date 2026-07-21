@@ -118,6 +118,8 @@ The central question is:
    - Specify duration, visible Elements, environment zone, body route, beat accent, landing, shot size, camera path, light continuity, handoff, and negatives for every custom shot.
    - When several approved plates represent one location, state in the master prompt and every shot that they are continuous zones of the same site, time, weather, light direction, practical-light color, construction system, and material response.
    - Give every shot a hard start and hard end time. Explicitly prohibit Omni from adding transitions, establishing inserts, reaction shots, or any unrequested intermediate shot.
+   - For manual production or when an external image API is unavailable, prefer three or four independent 4-6 second single-take clips for a 15-25 second film. A four-by-five-second structure is the default for this user's four-model hiphop work because each clip can be approved or replaced independently.
+   - Do not ask Omni to edit these independent clips internally. Assemble them with hard cuts in post at the declared boundaries.
 
 19. Production control and measurable acceptance:
    - Treat reference files, Element definitions, environment plates, prompts, generations, and accepted clips as versioned production assets rather than loose files.

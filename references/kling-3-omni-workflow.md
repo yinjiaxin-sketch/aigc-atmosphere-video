@@ -25,6 +25,8 @@ Each sequence should contain 3-4 custom shots. This gives the model enough conte
 
 If one shot fails, regenerate that shot as a separate single-shot Omni clip using the same Elements, action, camera path, environment zone, entry pose, and exit pose. Replace only that section in the edit.
 
+For manual production, identity-critical multi-character work, or a temporarily unavailable external image API, prefer three or four independent 4-6 second single-take clips. For four required characters with front/back coverage, default to four clips of five seconds for a 20-second film. Give every clip one physical camera take, one main spatial action, at most one explicit dance accent, and no internal edit. Join the approved clips with hard cuts in post. This costs more separate submissions but sharply limits identity drift, environment redesign, and automatic transitions.
+
 ## Custom Multi-Shot Prompt Contract
 
 For every shot specify:
@@ -81,4 +83,3 @@ Regenerate a shot when any of these occurs:
 - skin, concrete, or fabric becomes glossy;
 - the scene reads as a fashion campaign lineup instead of a music-video moment;
 - the model inserts a cut, extra person, text, prop, or light not specified in the storyboard.
-
